@@ -1,0 +1,45 @@
+/* * {
+  margin: 5px;
+} */
+
+.form {
+  border-style: dotted;
+  border-color: hotpink;
+  border: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-size: 10px;
+  flex-direction: column;
+  padding: 10px;
+}
+
+label {
+  font-size: 15px;
+  position: relative;
+  left: 0;
+}
+
+.input {
+  border: 1px solid #ccc;
+  -moz-border-radius: 27px;
+  border-radius: 27px;
+  background-color: #fff;
+  font-size: 15px;
+  width: 90%;
+  padding: 20px;
+}
+
+button {
+  width: 100px;
+  /* position: relative;
+  left: 40%; */
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(255, 99, 3);
+  border: 2px rgba(0, 0, 0, 0) solid;
+  border-radius: 10%;
+  color: white;
+  font-size: 13px;
+}

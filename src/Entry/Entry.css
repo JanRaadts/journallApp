@@ -1,0 +1,29 @@
+img {
+  position: absolute;
+  right: 10px;
+}
+
+.Entry {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  border-bottom: 2px solid rgba(120, 119, 119, 0.438);
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.Entry * {
+  padding-top: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 8px;
+}
