@@ -1,13 +1,10 @@
 import "./Entry.css";
 import favIcon from "./pictures/star.svg";
 import favIconFilled from "./pictures/star-filled.svg";
-import { useState } from "react";
 
-export default function Entry({ date, title, text }) {
-  const [icon, setIcon] = useState(false);
-
+export default function Entry({ date, title, text, onFavorite, favorite, id }) {
   function eventHandler() {
-    setIcon(!icon);
+    onFavorite(id);
   }
 
   return (
@@ -20,7 +17,7 @@ export default function Entry({ date, title, text }) {
         <p>{text}</p>
         <img
           alt="favorite__icon"
-          src={icon ? favIconFilled : favIcon}
+          src={favorite ? favIconFilled : favIcon}
           onClick={eventHandler}
         />
       </section>

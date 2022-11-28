@@ -1,12 +1,21 @@
 import EntryList from "../EntryList/EntryList";
 import NavigationTabs from "../NavigationTabs/NavigationTabs";
-import "./EntrySection.css";
 
-export default function AusgabeEinträge() {
+export default function EntrySection({
+  entries,
+  onFavorite,
+  onChangeEntriesView,
+  entriesLength,
+  favEntriesLength,
+}) {
   return (
     <>
-      <NavigationTabs />
-      <EntryList />
+      <NavigationTabs
+        entriesLength={entriesLength}
+        favEntriesLength={favEntriesLength}
+        onChangeEntriesView={onChangeEntriesView}
+      />
+      <EntryList entries={entries} onFavorite={onFavorite} />
     </>
   );
 }
